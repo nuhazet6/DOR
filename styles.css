@@ -1,0 +1,23 @@
+p {
+    font-size: large;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkslategray;
+    letter-spacing: 3px
+}
+
+button:hover {
+    background-color: darkslategrey;
+    color: aliceblue;
+    border: 5px solid rgb(31, 52, 52);
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: larger;
+    line-height: 2;
+}
+
+body {
+    background-color: rgb(165, 255, 225);
+}

@@ -1,0 +1,21 @@
+ * {
+     font-family: 'Courier New', Courier, monospace;
+     font-style: italic;
+     color: black
+ }
+
+ header,
+ footer,
+ nav,
+ aside {
+     display: none;
+ }
+
+ body.button,
+ body.button:hover {
+     display: none;
+ }
+
+ body {
+     background-color: brown;
+ }

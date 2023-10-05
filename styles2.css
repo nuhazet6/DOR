@@ -1,0 +1,13 @@
+p,
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+}
+
+button {
+    display: none
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
