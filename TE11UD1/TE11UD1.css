@@ -1,0 +1,31 @@
+.bg-blue{
+    background-color: blue;
+}
+.bg-red{
+    background-color: red;
+}
+.h-2{
+    height:2%
+}
+.h-5{
+    height:5%
+}
+.h-10{
+    height: 10%;
+}
+.h-40{
+    height: 40%;
+}
+.h-90{
+    height:90%;
+}
+.container-fluid {
+    height: 100vh;
+}
+
+@media (max-height:576px){
+    .bg-red{
+        height:10%;
+    }
+
+}
