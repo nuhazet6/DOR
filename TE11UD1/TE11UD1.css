@@ -23,9 +23,12 @@
     height: 100vh;
 }
 
-@media (max-height:576px){
+@media (max-width:576px){
     .bg-red{
         height:10%;
+    }
+    .test{
+        height: 90%;
     }
 
 }
