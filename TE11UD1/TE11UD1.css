@@ -1,8 +1,15 @@
+
 .bg-blue{
     background-color: blue;
 }
 .bg-red{
     background-color: red;
+}
+.bg-green{
+    background-color: green;
+}
+.bg-lightblue{
+    background-color: lightblue;
 }
 .h-2{
     height:2%
