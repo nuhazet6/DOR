@@ -11,6 +11,12 @@
 .bg-lightblue{
     background-color: lightblue;
 }
+.bg-orange{
+    background-color: orange;
+}
+.bg-grey{
+    background-color: grey;
+}
 .h-2{
     height:2%
 }
@@ -37,5 +43,21 @@
     .test{
         height: 90%;
     }
+    .zombie{
+        display: none;
+    }
 
+}
+
+@media (max-width:768px){
+    .ghost{
+        display: none;
+    }
+    
+}
+
+@media (min-width:768px){
+    .zombie{
+        display: none;
+    }
 }

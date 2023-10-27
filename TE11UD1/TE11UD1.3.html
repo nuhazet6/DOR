@@ -12,16 +12,31 @@
     <title>bootstrap</title>
   </head>
   <body>
-    <div class="container">
-        <div class="row bg-green ">Header</div>
+    <div class="container text-center">
+        <div class="row bg-green "><div>Header</div></div>
         <div class="row">
-            <div class="col-sm-3 offset col-6 bg-blue">1</div>
+            <div class="col-sm-3 offset-md-3 col-6 bg-blue">1</div>
             <div class="col-sm-3 col-6 bg-blue">2</div>
+            <div class="col-md-3 ghost"></div>
             <div class="col-sm-3 col-6 bg-blue">3</div>
-            <div class="col-sm-3 col-6 bg-blue">4</div>
+            <div class="col-sm-3 offset-md-6 col-6 bg-blue">4</div>
         </div>
-        <div class="row"> <div class="col-md-0 bg-lightblue">Tablet</div></div>
+        <div class="row bg-lightblue d-none d-sm-flex d-md-none"> Tablet</div>
+        <div class="row">
+          <div class="col-sm-3 col-6 order-md-4 bg-grey" >a</div>
+          <div class="col-sm-3 col-6 order-md-3 bg-grey" >b</div>
+          <div class="col-sm-3 col-6 order-md-2 bg-grey" >c</div>
+          <div class="col-sm-3 col-6 order-md-1 bg-grey" >d</div>
+        </div>
+        <div class="row bg-lightblue d-none d-md-flex "><div>Desktop</div></div>
+        <div class="row bg-lightblue d-sm-none d-flex "><div>Mobile</div></div>
+        <div class="row ">
+          <div class="col-6 col-md-3 col d-none d-sm-flex order-sm-2 offset-md-3 bg-orange">:(</div>
+          <div class="col-sm-6 col-md-3 col d-sm-flex order-md-2 bg-orange">:D</div>
+          <div class="col-md-3 col order-3 ghost"></div>
+        </div>
     </div>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
