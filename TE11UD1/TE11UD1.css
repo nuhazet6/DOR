@@ -17,6 +17,9 @@
 .bg-grey{
     background-color: grey;
 }
+.bg-yellow{
+    background-color: yellow;
+}
 .h-2{
     height:2%
 }
@@ -35,6 +38,23 @@
 .container-fluid {
     height: 100vh;
 }
+@media (min-width:576px){
+    .text-sm-left{
+        text-align: left;
+    }
+    .sm-color-skyblue{
+        background-color: skyblue;
+    }
+    .text-xs-right{
+        text-align:center
+    }
+    .text-sm-right{
+        text-align: right;
+    }
+    .sm-color-green{
+        background-color: green;
+    }
+}
 
 @media (max-width:576px){
     .bg-red{
@@ -46,6 +66,18 @@
     .zombie{
         display: none;
     }
+    .text-sm-left{
+        text-align: center;
+    }
+    .text-xs-right{
+        text-align: right;
+    }
+    .text-sm-right{
+        text-align:center;
+    }
+    .xs-color-skyblue{
+        background-color: skyblue;
+    }
 
 }
 
@@ -53,11 +85,35 @@
     .ghost{
         display: none;
     }
+    .text-md-right{
+        text-align: center;
+    }
+    .text-md-left{
+        text-align: center;
+    }
     
 }
 
 @media (min-width:768px){
     .zombie{
         display: none;
+    }
+    .md-color-green{
+        background-color: green;
+    }
+    .text-md-center{
+        text-align: center;
+    }
+    .text-sm-right{
+        text-align:center;
+    }
+    .sm-color-green{
+        background-color: red;
+    }
+    .text-md-right{
+        text-align: right;
+    }
+    .text-md-left{
+        text-align: left;
     }
 }
