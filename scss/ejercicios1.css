@@ -1,0 +1,26 @@
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+hover {
+  background-color: #fff;
+  color: #333;
+}/*# sourceMappingURL=ejercicios1.css.map */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  .container h1 {
+  font-size: 24px;
+  color: #333;
+  }
+  .container p {
+  font-size: 16px;
+  color: #666;
+  }
