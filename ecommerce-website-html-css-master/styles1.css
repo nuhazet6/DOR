@@ -8,25 +8,25 @@
 }
 
 h1 {
-  font-size: 50px;
-  line-height: 64px;
-  color: #222;
+  font-size: 50;
+  line-height: 64;
+  color: rgb(34, 34, 34);
 }
 
 h2 {
-  font-size: 46px;
-  line-height: 54px;
-  color: #222;
+  font-size: 46;
+  line-height: 54;
+  color: rgb(34, 34, 34);
 }
 
 h4 {
-  font-size: 20px;
-  color: #222;
+  font-size: 20;
+  color: rgb(34, 34, 34);
 }
 
 h6 {
+  font-size: 12;
   font-weight: 700;
-  font-size: 12px;
 }
 
 p {
@@ -57,7 +57,7 @@ button.normal {
 }
 
 button.normal:hover {
-  background-color: #088178;
+  background-color: rgb(8, 129, 120);
   color: #fff;
 }
 
@@ -86,7 +86,7 @@ body {
   justify-content: center;
 }
 .header-list-icon a:hover {
-  color: #088178;
+  color: rgb(8, 129, 120);
 }
 .header-list-icon a {
   color: #1a1a1a;
@@ -110,7 +110,7 @@ body {
 }
 .header-list-nav ul a:hover,
 .header-list-nav ul a.active {
-  color: #088178;
+  color: rgb(8, 129, 120);
   content: "";
 }
 .header-list-nav ul li a:hover::after,
@@ -118,7 +118,7 @@ body {
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: rgb(8, 129, 120);
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -145,7 +145,7 @@ body {
   font-size: 70px;
 }
 #hero h1 {
-  color: #088178;
+  color: rgb(8, 129, 120);
   font-size: 70px;
 }
 #hero button {
@@ -159,7 +159,7 @@ body {
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
-  color: #088178;
+  color: rgb(8, 129, 120);
   padding: 14px 65px 14px 65px;
 }
 
@@ -192,14 +192,14 @@ body {
   line-height: 1;
   font-size: 14px;
   border-radius: 4px;
-  color: #088178;
+  color: rgb(8, 129, 120);
   background-color: #fddde4;
 }
 #features .f-box:nth-child(2) h6 {
-  background-color: rgb(205, 235, 188);
+  background-color: #cdebbc;
 }
 #features .f-box:nth-child(3) h6 {
-  background-color: rgb(209, 232, 242);
+  background-color: #d1e8f2;
 }
 #features .f-box:nth-child(4) h6 {
   background-color: #cdd4f8;
@@ -253,11 +253,11 @@ body {
   padding: 6px 0;
 }
 .product-section .product-cart .price {
-  color: #088178;
+  color: rgb(8, 129, 120);
   padding: 4px 0;
 }
 .product-section .product-cart .buy-icon {
-  color: #088178;
+  color: rgb(8, 129, 120);
   background-color: rgba(199, 233, 231, 0.368627451);
   padding: 15px;
   border-radius: 50px;
@@ -290,10 +290,14 @@ body {
   in featured products section
 */
 /* banners section styles */
+h4, span {
+  color: rgb(248, 248, 248);
+}
+
 #banners {
   margin: 0 60px;
 }
-#banners h2, #banners h4, #banners span {
+#banners h2 {
   color: rgb(248, 248, 248);
 }
 #banners .big-banners {
@@ -326,14 +330,23 @@ body {
   transition: 0.3s ease;
 }
 #banners .big-banners div:hover button {
-  background-color: #088178;
-  border: 1px solid #088178;
+  background-color: rgb(8, 129, 120);
+  border: 1px solid rgb(8, 129, 120);
 }
 #banners .big-banners-1 {
   background-image: url(images/banner/b17.jpg);
 }
 #banners .big-banners-2 {
   background-image: url(images/banner/b10.jpg);
+}
+#banners .small-banners-1 {
+  background-image: "images/banner/b7.jpg";
+}
+#banners .small-banners-2 {
+  background-image: "images/banner/b4.jpg";
+}
+#banners .small-banners-3 {
+  background-image: "images/banner/b18.jpg";
 }
 #banners .small-banners-1 {
   background-image: url(images/banner/b7.jpg);
@@ -364,7 +377,7 @@ body {
   font-size: 25px;
 }
 #banners .small-banners h5 {
-  color: #771818;
+  color: rgb(119, 24, 24);
 }
 
 /* newsletter section styles */
@@ -372,7 +385,7 @@ body {
   background-image: url(images/banner/b14.png);
   background-repeat: no-repeat;
   background-position: 180px;
-  background-color: #041e42;
+  background-color: rgb(4, 30, 66);
   height: 160px;
   display: flex;
   align-items: center;
@@ -395,7 +408,7 @@ body {
   padding: 20px;
   width: 350px;
   height: 56px;
-  background-color: #d1d0d0;
+  background-color: rgb(209, 208, 208);
   border-radius: 6px 0 0 6px;
   font-size: 18px;
   border: none;
@@ -408,7 +421,7 @@ body {
   padding: 20px;
   border: none;
   width: 120px;
-  background-color: #088178;
+  background-color: rgb(8, 129, 120);
   color: white;
   font-size: 17px;
   border-radius: 0 6px 6px 0;
@@ -421,16 +434,20 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   padding: 75px;
-  background-color: #ececec;
+  background-color: rgb(236, 236, 236);
 }
 #footer p, #footer a {
   color: rgb(109, 109, 109);
   text-decoration: none;
 }
 #footer a:hover {
-  color: #088178;
+  color: rgb(8, 129, 120);
 }
-#footer .about a, #footer .myaccount a {
+#footer .about a {
+  display: block;
+  padding: 8px 0;
+}
+#footer .myaccount a {
   display: block;
   padding: 8px 0;
 }

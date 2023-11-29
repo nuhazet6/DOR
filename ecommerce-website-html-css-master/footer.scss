@@ -1,0 +1,32 @@
+/* footer section styles */
+
+#footer{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding: 75px;
+    background-color: rgb(236, 236, 236);
+  
+  p, a{
+    color: rgb(109, 109, 109);
+    text-decoration: none;
+  }
+  a:hover{
+    color:$normal_green;
+  }
+  @mixin a_content{
+    display: block;
+    padding:8px 0;
+  }
+  .about a{
+    @include a_content;
+  } 
+  .myaccount a{ 
+    @include a_content;
+  }
+
+  .download img{
+    border: 1px solid #08817969;
+    border-radius: 7px;
+  }
+}

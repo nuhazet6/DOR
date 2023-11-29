@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
-/* global styles */
 
+$normal_green : rgb(8, 129, 120);
+$black_h: rgb(34, 34, 34);
+
+/* global styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,24 +11,32 @@
   font-family: "League Spartan", sans-serif;
 }
 
-h1 {
-  font-size: 50px;
-  line-height: 64px;
-  color: #222;
+@each $number,$size,$height,$color,$weight in 
+(1,50,64,$black_h,''),
+(2,46,54,$black_h,''),
+(4,20,'',$black_h,''),
+(6,12,'','',700){
+@if $number == 1 or $number==2{
+  h#{$number} {
+    font-size: $size;
+    line-height: $height;
+    color:$color;
+  }
 }
-h2 {
-  font-size: 46px;
-  line-height: 54px;
-  color: #222;
+@if $number == 4{
+  h#{$number} {
+    font-size: $size;
+    color:$color;    
+  }
 }
-h4 {
-  font-size: 20px;
-  color: #222;
+@if $number == 6{
+  h#{$number} {
+    font-size: $size;
+    font-weight: $weight;
+  }
 }
-h6 {
-  font-weight: 700;
-  font-size: 12px;
 }
+
 p {
   font-size: 16px;
   color: #465b52;
@@ -51,7 +62,7 @@ button.normal {
   transition: 0.2s;
 }
 button.normal:hover {
-  background-color: #088178;
+  background-color: $normal_green;
   color: #fff;
 }
 body {
@@ -76,7 +87,7 @@ body {
   align-items: center;
   justify-content: center;
 &-icon a:hover{
-  color: #088178;
+  color: $normal_green;
 }
 &-icon a {
   color: #1a1a1a;
@@ -101,7 +112,7 @@ body {
 }
   a:hover,
   a.active {
-  color: #088178;
+  color: $normal_green;
   content: "";
 }
   li a:hover::after,
@@ -109,7 +120,7 @@ body {
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: $normal_green;
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -137,7 +148,7 @@ body {
 
 }
  h1 {
-  color: #088178;
+  color: $normal_green;
   font-size: 70px;
 
 }
@@ -154,7 +165,7 @@ body {
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
-  color: #088178;
+  color: $normal_green;
   padding: 14px 65px 14px 65px;
 }
 }
@@ -187,7 +198,7 @@ body {
   line-height: 1;
   font-size: 14px;
   border-radius: 4px;
-  color: #088178;
+  color: $normal_green;
   background-color: #fddde4;
 }
  &:nth-child(2) h6 {
@@ -251,11 +262,11 @@ p {
   padding: 6px 0;
 }
   .price {
-  color: #088178;
+  color: $normal_green;
   padding: 4px 0;
 }
   .buy-icon {
-  color: #088178;
+  color: $normal_green;
   background-color: #c7e9e75e;
   padding: 15px;
   border-radius: 50px;
@@ -288,9 +299,12 @@ h2 {
   in featured products section
 */
 /* banners section styles */
+h4,  span {
+  color: rgb(248, 248, 248);
+}
 #banners {
     margin: 0 60px;  
-  h2,  h4,  span {
+  h2{
     color: rgb(248, 248, 248);
   }
   .big-banners {
@@ -322,8 +336,8 @@ h2 {
     transition: 0.3s ease;
   }
   div:hover button {
-    background-color: #088178;
-    border: 1px solid #088178;
+    background-color: $normal_green;
+    border: 1px solid $normal_green;
   }
   &-1 {
     background-image: url(images/banner/b17.jpg);
@@ -333,7 +347,13 @@ h2 {
   }
 }
   .small-banners{
-  &-1 {
+    $urls : ('images/banner/b7.jpg','images/banner/b4.jpg','images/banner/b18.jpg');
+    @for $i from 1 through 3{
+      &-#{$i}{
+        background-image: nth($urls,$i);
+      }
+    }
+    &-1 {
     background-image: url(images/banner/b7.jpg);
   }
   &-2 {
@@ -363,7 +383,7 @@ h2 {
     font-size: 25px;
   }
   h5 {
-    color: #771818;
+    color: rgb(119, 24, 24);
   }
 }
 }
@@ -377,7 +397,7 @@ h2 {
         image: url(images/banner/b14.png);
         repeat: no-repeat;
         position: 180px;
-        color: #041e42;
+        color: rgb(4, 30, 66);
     }
     height: 160px;
     display: flex;
@@ -402,7 +422,7 @@ h2 {
     padding: 20px;
     width: 350px;
     height: 56px;
-    background-color: #d1d0d0;
+    background-color: rgb(209, 208, 208);
     border-radius: 6px 0 0 6px;
     font-size: 18px;
   
@@ -416,36 +436,12 @@ h2 {
     padding: 20px;
     border: none;
     width: 120px;
-    background-color: #088178;
+    background-color: $normal_green;
     color: white;
     font-size: 17px;
     border-radius: 0 6px 6px 0;
     cursor: pointer;
   }
 }
-/* footer section styles */
 
-#footer{
-    display: flex;
-    align-items:flex-start;
-    justify-content: space-between;
-    padding: 75px;
-    background-color: #ececec;
-  
-  p, a{
-    color: rgb(109, 109, 109);
-    text-decoration: none;
-  }
-  a:hover{
-    color:#088178;
-  }
-  .about, .myaccount{ 
-    a{
-    display: block;
-    padding:8px 0;
-  }}
-  .download img{
-    border: 1px solid #08817969;
-    border-radius: 7px;
-  }
-}
+@import "footer";
