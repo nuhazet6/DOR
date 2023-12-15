@@ -1,0 +1,21 @@
+$nombre: 'miclase';
+$color-principal: rgb(145, 155, 9);
+$tamaño-fuente: 5;
+$tasa-reduccion: 0.7;
+@mixin headers($numero,$nombre_clase,$color,$tamaño,$reduccion){
+    .#{$nombre_clase} h#{$numero}{
+        color: $color;
+        font-size: ($tamaño * $reduccion) 'rem';
+    }
+}
+@for $i from 1 through 4{
+    $porcentaje_color: ($i/10);
+    $tasa-reduccion-actual: 1;
+    @if $i == 1{
+        $tasa-reduccion-actual: 1;
+    }@else{
+        $tasa-reduccion-actual: ($tasa-reduccion/($i - 1));
+    }
+
+     @include headers($i,#{$nombre},opacify($color-principal,$porcentaje_color),$tamaño-fuente,$tasa-reduccion-actual)       
+ }

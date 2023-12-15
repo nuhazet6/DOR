@@ -1,0 +1,10 @@
+$datos: (intrepida,11pt,red,lightgray),
+(clasica,12pt,black,white),
+(inversa,9pt,orange,silver); 
+@each $nombre,$pt,$color,$fondo in $datos{
+    .card-#{$nombre}{
+        font-size: $pt;
+        color: $color;
+        background-color: $fondo;
+    }
+}

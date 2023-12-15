@@ -1,0 +1,19 @@
+.miclase h1 {
+  color: rgba(145, 155, 9, 0.9);
+  font-size: 5 "rem";
+}
+
+.miclase h2 {
+  color: rgba(145, 155, 9, 0.8);
+  font-size: 3.5 "rem";
+}
+
+.miclase h3 {
+  color: rgba(145, 155, 9, 0.7);
+  font-size: 1.75 "rem";
+}
+
+.miclase h4 {
+  color: rgba(145, 155, 9, 0.6);
+  font-size: 1.1666666667 "rem";
+}/*# sourceMappingURL=style.css.map */
