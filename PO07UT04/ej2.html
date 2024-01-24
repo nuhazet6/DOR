@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio7</title>
+    <style>
+        button{
+            height: 100%;
+            width: 100%;
+        }
+        .envoltorio{
+            height: 50px;
+            width: 150px;            
+            }
+        .envoltorio:hover button{
+            animation-name: soltarse,caida;
+            animation-duration:3s,3s;
+            animation-delay:0s,1.5s;
+        }
+        @keyframes soltarse{
+            10%{transform: rotate(100deg);transform-origin: 0 0;}
+            30%{transform: rotate(60deg);transform-origin: 0 0;}
+            60%{transform: rotate(95deg);transform-origin: 0 0;}
+        }
+        @keyframes caida{
+            100%{transform: translateY(2000px);}
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="envoltorio">
+    <button >Boton de broma</button>
+    </div>
+</body>
+</html>
